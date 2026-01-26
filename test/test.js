@@ -26,9 +26,9 @@ describe('GET', function(){
 		    })
 
 	  it('/api respuesta contiene objeto animales', function(done){
-		      request
-		      .get('/api')
-		      .set('Accept', 'application/json')
-		      .expect(200, {"cat":"meow","dog":"bark","eel":"hiss","bear":"growl","frog":"croak","lion":"roar","bird":"tweet"}, done);
-		    })
+      		request
+      		.get('/api')
+      		.set('Accept', 'application/json')
+      		.expect(200, {"cat":"meow","dog":"bark","eel":"hiss","bear":"growl","frog":"croak","lion":"roar","bird":"tweet","cow":"moo"}, done);
+		})
 })
